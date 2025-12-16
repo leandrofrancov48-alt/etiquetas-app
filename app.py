@@ -92,8 +92,8 @@ st.set_page_config(page_title="Etiquetas Inteligentes", layout="centered")
 
 st.title("🖨️ Etiquetas PDF")
 st.markdown("""
-* **1, 2 o 4 etiquetas:** Salen en cuadrícula (Más grandes).
-* **3 etiquetas:** Salen las 3 en fila (Como la foto).
+* **1, 2 o 4 etiquetas:** Salen en cuadrícula.
+* **3 etiquetas:** Salen las 3 en fila.
 """)
 
 archivos = st.file_uploader("Subí los archivos aquí", type="pdf", accept_multiple_files=True)
@@ -111,3 +111,4 @@ if archivos:
                 file_name="ETIQUETAS_LISTAS.pdf",
                 mime="application/pdf"
             )
+
